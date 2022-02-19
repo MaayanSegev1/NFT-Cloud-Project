@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/layouttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:id="@+id/top_bar"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/img_menu"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_24sdp"
+                android:gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                app:tint="?android:textColorPrimary"
+                android:src="@drawable/ic_baseline_menu_24" />
+            <TextView
+                android:id="@+id/menuTxt"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:gravity="center|start"
+                android:textAllCaps="true"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_13ssp"
+                android:layout_margin="@dimen/_10sdp"
+                />
+            <Space
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Spinner
+                android:visibility="invisible"
+                android:layout_weight="4.5"
+                android:entries="@array/sort"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_below="@+id/top_bar"
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_drawer"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        android:scrollbarSize="20dp"
+        app:itemIconTint="?android:textColorPrimary"
+        app:itemTextColor="?android:textColorPrimary"
+
+        >
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+

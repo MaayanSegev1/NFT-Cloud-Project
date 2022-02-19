@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NFT Cloud</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_wait">המתן בבקשה</string>
+    <string name="welcome_back">ברוך שובך!</string>
+    <string name="please_login_to_your_account">אנא היכנס לחשבון שלך</string>
+    <string name="email">אימייל</string>
+    <string name="password">סיסמה</string>
+    <string name="login">התחברות</string>
+    <string name="don_t_have_an_account">אין לך חשבון?</string>
+    <string name="enter_password">נא להזין סיסמה</string>
+    <string name="enter_email">נא להזין אימייל</string>
+    <string name="success_login">כניסה בהצלחה</string>
+    <string name="confirm_password">אשר סיסמה</string>
+    <string name="sign_up">הירשם</string>
+    <string name="already_have_an_account">כבר יש לך חשבון?</string>
+    <string name="signin">להתחבר</string>
+    <string name="field_required">שדה נדרש</string>
+    <string name="password_length">אורך הסיסמה המינימלי הוא 6</string>
+    <string name="upload_profile">העלה פרופיל</string>
+    <string name="nick_name">כינוי</string>
+    <string name="full_name">שם מלא</string>
+    <string name="about">על אודות</string>
+    <string name="save">לשמור</string>
+    <string name="email_already_registered">דוא"ל זה כבר רשום בבקשה נסה עם חשבון אחר</string>
+    <string name="signup_success_login">הרישום הצליח, עכשיו התחבר בבקשה</string>
+    <string name="type_a_message">הקלד הודעה</string>
+    <string name="search">לחפש</string>
+    <string name="dark_mode">מצב כהה</string>
+    <string name="english">אנגלית</string>
+    <string name="hebrew">עברית</string>
+    <string name="set_changes">הגדר שינויים</string>
+    <string name="add_new_nft">הוסף NFT חדש</string>
+    <string name="tap_to_insert_a_nft">הקש כדי להוסיף NFT</string>
+    <string name="nft_name">שם NFT</string>
+    <string name="nft_skills">מיומנויות NFT</string>
+    <string name="like">כמו</string>
+    <string name="message">הודעה</string>
+    <string name="likes">\"אהבתי -\"</string>
+    <string name="liked_success">אהבתי הצליח</string>
+    <string name="no_chats">לא נמצאו צ\'אטים</string>
+    <string name="register_for_nfc">הירשם לאפליקציה כדי להוסיף NFT</string>
+    <string name="image_required">נדרשת תמונה</string>
+    <string name="nft_added">Nft נוסף בהצלחה</string>
+    <string name="nfts">\"NFT - \"</string>
+    <string name="signout">התנתק</string>
+    <string name="home">עמוד ראשי</string>
+    <string name="profile"> פרופיל</string>
+    <string name="messages">הודעות</string>
+    <string name="settings">הגדרות</string>
+    <string-array name="sort">
+        <item>החדש ביותר</item>
+        <item>פופולרי</item>
+        <item>אקראי</item>
+    </string-array>
+</resources>

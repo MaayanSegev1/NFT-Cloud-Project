@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                android:background="@color/purple_500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_below="@+id/d"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/news_shop"
+                        app:tint="?android:textColorPrimary"
+                        app:civ_border_color="@android:color/darker_gray"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        app:civ_border_width="1dp" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/uname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M Usman"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="?android:textColorPrimary"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_bold"
+                    />
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I am usman . i am expert person"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="?android:textColorPrimary"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_bold"
+                    />
+
+            </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_40sdp"
+                 android:orientation="horizontal"
+                 android:gravity="center"
+                 android:weightSum="3"
+                 android:background="@color/purple_700">
+                 <TextView
+                     android:id="@+id/likes"
+                     android:layout_weight="1.5"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:text="Likes - 10"
+                     android:textColor="?android:textColorPrimary"
+                     android:textSize="@dimen/_12ssp"
+                     android:gravity="center"
+                     android:fontFamily="@font/poppins_bold"
+                     />
+                 <View
+                     android:layout_width="2dp"
+                     android:layout_height="match_parent"
+                     android:background="@color/purple_500"/>
+                 <TextView
+                     android:id="@+id/nfts"
+                     android:textColor="?android:textColorPrimary"
+                     android:layout_weight="1.5"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:text="NFT - 5"
+                     android:textSize="@dimen/_12ssp"
+                     android:gravity="center"
+                     android:fontFamily="@font/poppins_bold"
+                     />
+             </LinearLayout>
+             <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/recyclerview"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"/>
+            </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/_10sdp"
+
+        app:tint="?android:textColorPrimary"
+        android:src="@drawable/ic_baseline_add_24"/>
+</FrameLayout>

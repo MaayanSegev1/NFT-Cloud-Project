@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_35sdp">
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="@dimen/_16sdp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl"
+            android:text="@string/welcome_back"
+            android:gravity="center"
+            android:textSize="@dimen/_18ssp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="?android:textColorPrimary"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_10sdp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_welcome"
+            android:text="@string/please_login_to_your_account"
+            android:gravity="center"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="?android:textColorPrimary"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_10sdp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="?android:textColorPrimary"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_below="@+id/relativeLayout"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_below="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="vertical"
+        >
+        <!-- <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="@dimen/_7sdp"
+             android:layout_marginTop="@dimen/_40sdp"
+             app:cardBackgroundColor="#f6f6f6"
+             app:cardCornerRadius="20dp"
+             android:layout_margin="@dimen/_10sdp"
+             >-->
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:background="@drawable/edit_text_without_strock"
+            android:drawableLeft="@drawable/ic_baseline_mail_24"
+            android:drawablePadding="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/email"
+            app:tint="?android:textColorPrimary"
+            android:inputType="textEmailAddress"
+            android:paddingStart="30dp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="@dimen/_13ssp"
+            android:shadowRadius="10"
+            android:paddingLeft="30dp" />
+        <!--    </androidx.cardview.widget.CardView>-->
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:background="@drawable/edit_text_without_strock"
+            android:drawablePadding="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="30dp"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:textColorHint="@android:color/black"
+            android:textSize="@dimen/_13ssp"
+            android:paddingLeft="30dp" />
+        <TextView
+            android:id="@+id/tv_frogot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="end"
+            android:visibility="invisible"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Forgot Password?"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginRight="@dimen/_16sdp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:padding="@dimen/_8sdp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.ButtonRounded"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/_14ssp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:layout_weight="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_an_account"
+                android:textSize="@dimen/_12ssp"
+                android:gravity="end"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_weight="0.7"
+                android:id="@+id/tv_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textColor="@color/purple_500"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/_12ssp"
+                tools:layout_editor_absoluteX="318dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

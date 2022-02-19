@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="?android:textColorPrimary"
+        android:title="@string/home" />
+    <item
+
+        android:id="@+id/messages"
+        android:icon="@drawable/ic_baseline_mail_24"
+        android:iconTint="?android:textColorPrimary"
+        android:title="@string/messages"
+
+        />
+    <item
+
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:iconTint="?android:textColorPrimary"
+        android:title="@string/profile"
+
+        />
+    <item
+
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:iconTint="?android:textColorPrimary"
+        android:title="@string/settings"
+
+        />
+    <item
+
+        android:id="@+id/signin"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:iconTint="?android:textColorPrimary"
+        android:title="@string/signin"
+
+        />
+
+
+
+
+
+
+
+</menu>

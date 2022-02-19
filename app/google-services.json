@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "938195014663",
+    "firebase_url": "https://my-nft-cloud-default-rtdb.firebaseio.com",
+    "project_id": "my-nft-cloud",
+    "storage_bucket": "my-nft-cloud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938195014663:android:e18a31bac873c3fc0b46a2",
+        "android_client_info": {
+          "package_name": "com.nft.cloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938195014663-dstgedgmojmrr0v2me7q6po72q8eb4ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsTxIfV2oyV9qZDbgc8QbhrdZZ18GsDy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938195014663-dstgedgmojmrr0v2me7q6po72q8eb4ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

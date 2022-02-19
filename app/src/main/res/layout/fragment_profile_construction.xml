@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_below="@+id/d"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/ic_baseline_person_24"
+                        app:civ_border_color="@android:color/darker_gray"
+                        app:tint="?android:textColorPrimary"
+
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        app:civ_border_width="1dp" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl"
+                    android:text="@string/upload_profile"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="?android:textColorPrimary"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_bold"
+                    />
+
+                <EditText
+                    android:id="@+id/signup_nick"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55sdp"
+                    android:background="@drawable/edit_text_without_strock"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/_16sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/nick_name"
+                    android:inputType="text"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:paddingStart="30dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingLeft="30dp" />
+
+                <EditText
+                    android:id="@+id/signup_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55sdp"
+                    android:background="@drawable/edit_text_without_strock"
+                    android:drawablePadding="@dimen/_16sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/full_name"
+                    android:paddingStart="30dp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingLeft="30dp" />
+
+                <EditText
+                    android:id="@+id/signup_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55sdp"
+                    android:background="@drawable/edit_text_without_strock"
+                    android:drawablePadding="@dimen/_16sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/about"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:drawableStart="@drawable/ic_user"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_user" />
+
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_8sdp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.ButtonRounded"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_14ssp"
+                    />
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:weightSum="1"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:layout_marginBottom="@dimen/_32sdp"
+                    >
+
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account?"
+                        android:textSize="@dimen/_12ssp"
+                        android:gravity="end"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+
+                        android:id="@+id/tv_signIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text=" SignIn"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/purple_500"
+                        android:textSize="@dimen/_12ssp"
+                        tools:layout_editor_absoluteX="318dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
